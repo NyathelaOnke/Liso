@@ -6,11 +6,11 @@
 
 html {
   scroll-behavior: smooth;
-} /*
+} 
 img {
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
-}*/
+}
 nav {
   padding-top: 3vw;
   padding-left: 1.3vw;
