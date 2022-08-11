@@ -749,6 +749,24 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 1.8vw;
 }
 
+footer .bottom-footer {
+  background: rgba(245, 245, 245, 0.2);
+  height: 7vh;
+  width: 100%;
+  color: black;
+  text-align: center;
+  position: absolute;
+  padding-top: 0.5vw;
+  transition: 0.5s ease-in-out;
+}
+footer .bottom-footer a {
+  color: black;
+}
+footer .bottom-footer a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
   .column {
     float: 50%;
