@@ -760,7 +760,9 @@ footer .bottom-footer {
   transition: 0.5s ease-in-out;
 }
 footer .bottom-footer a {
+  font-size: 1.3vw;
   color: black;
+  letter-spacing: 0.13vw;
 }
 footer .bottom-footer a:hover {
   color: orange;
