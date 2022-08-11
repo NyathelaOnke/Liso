@@ -6,7 +6,11 @@
 
 html {
   scroll-behavior: smooth;
-}
+} /*
+img {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}*/
 nav {
   padding-top: 3vw;
   padding-left: 1.3vw;
@@ -42,82 +46,84 @@ nav {
   color: red;
   box-shadow: 0.35vw 0.35vw 0.35vw -0.35vw red;
 }
-nav a {
-  font-size: 1.5vw;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 0.95vw;
-  background: purple;
-  color: orange;
-  align-items: center;
-  border: none;
-  border-radius: 0.5vw;
-  cursor: pointer;
-  transition: all ease-in-out 0.45s;
-}
-nav a:hover {
-  background: rgba(245, 245, 245, 0.192);
-  color: orange;
-  text-decoration: none;
-}
-header {
-  background: black;
-  width: 100%;
-  color: whitesmoke;
-}
-header .content {
-  padding-left: 16vw;
-}
-header .content p {
-  text-align: center;
-  padding-top: 1vw;
-  font-size: 1.8vw;
-}
 .homepage {
   display: inline-flex;
-}
-header img {
-  height: 4vw;
-}
-header .in-touch a {
-  color: whitesmoke;
-}
-header .in-touch a:hover {
-  color: orange;
-  text-decoration: none;
-}
-header .the-form h2 {
-  padding-top: 1vw;
-  text-align: center;
-  font-size: 1.8vw;
-}
-header form {
-  display: inline-flex;
-  padding-top: 1vw;
-  padding-left: 8vw;
-}
-header .the-form form input[type="email"] {
-  font-size: 1.1vw;
-  padding: 0.7vw 0.9vw;
-  border-top-left-radius: 1.8vw;
-  border-bottom-left-radius: 1.8vw;
-  background-color: wheat;
-  color: black;
-  width: 35vw;
+  width: 100%;
 }
 
-header .the-form form button {
-  border-radius: 0.1vw;
-  border-top-right-radius: 1.2vw;
-  border-bottom-right-radius: 1.2vw;
-  background-color: black;
-  color: orange;
-  width: 50%;
-  font-size: 1.3vw;
-  font-weight: 700;
-  padding: 0.9vw;
+.navbar.sticky {
+  position: fixed;
+  padding: 19px 0;
+  background: rgba(0, 0, 0, 0.59);
+  backdrop-filter: blur(3.5px);
+  padding: 20px;
+  z-index: 999;
+  width: 100%;
+}
+.navbar.sticky .menu li a:hover {
+  text-decoration: none;
+  color: rgb(150, 142, 142);
+}
+.navbar.sticky .logo a:hover {
+  font-weight: 550;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: rgba(245, 245, 245, 0.2);
+  font-family: "ubuntu", sans-serif;
+  transition: all 0.5 ease;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: whitesmoke;
+  font-size: 2.3vw;
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+}
+.navbar .logo a:hover {
+  font-weight: 600;
+  letter-spacing: 0.3vw;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: red;
+}
+.navbar .menu {
+  padding-top: 2vw;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 1.2vw;
+}
+.navbar .menu li a {
+  color: whitesmoke;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-left: 2vw;
+  letter-spacing: 0.15vw;
+  transition: color 0.4s ease-out;
+  opacity: 0.95;
+}
+.navbar .menu li a:hover {
+  text-decoration: none;
+  color: rgb(102, 100, 100);
+}
+
+.menu-btn {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
   cursor: pointer;
-  transition: all ease-in-out 0.45s;
+  display: none;
 }
 
 .home {
@@ -137,12 +143,100 @@ header .the-form form button {
   -ms-flex: 33.33%;
   flex: 33.33%;
   max-width: 33.33%;
-  height: 110vh;
+  height: 100vh;
 }
+.home .column .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  font-size: 1.5vw;
+  padding: 1.2vw;
+  opacity: 0;
+  text-align: center;
+}
+.home .column a:hover .overlay {
+  opacity: 1;
+}
+.home .column .one {
+  background-image: url(images/home/album.png);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3.5px);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  height: 55%;
+}
+.home .column .two {
+  background-image: url(images/home/performance.jpg);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3.5px);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  height: 45%;
+}
+.home .column .three {
+  background-image: url(images/home/about.jpeg);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3.5px);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  height: 45%;
+}
+.home .column .four {
+  background-image: url(images/home/contact.JPG);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3.5px);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  height: 55%;
+}
+.home .column .five {
+  background-image: url(images/home/latest.JPG);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3.5px);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  height: 50%;
+}
+.home .column .six {
+  background-image: url(images/home/music.png);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3.5px);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  width: 100%;
+  height: 50%;
+}
+/*
 .home .column img {
   vertical-align: middle;
   width: 100%;
-  padding: 0.4vw;
 }
 .home .one img {
   vertical-align: middle;
@@ -162,12 +256,12 @@ header .the-form form button {
 .home .three .three1 img {
   vertical-align: middle;
   width: 100%;
-  height: 45%;
+  height: 50%;
 }
 .home .three .three2 img {
   vertical-align: middle;
   width: 100%;
-  height: 55%;
+  height: 50%;
 }
 
 .home .social {
@@ -210,16 +304,9 @@ header .the-form form button {
   transition: all ease-in-out 0.45s;
   width: 5vw;
 }
-
+*/
 .contact {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.3),
-    rgba(255, 166, 0, 0.3),
-    rgba(128, 0, 128, 0.55),
-    rgba(255, 166, 0, 0.55)
-  );
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,7 +337,7 @@ header .the-form form button {
   border-radius: 0.3vw;
   padding: 1vw;
   background: black;
-  color: crimson;
+  color: white;
   box-shadow: rgba(255, 255, 255, 0.26) 0px 10px 20px,
     rgba(255, 255, 255, 0.3) 0px 6px 6px;
 }
@@ -267,28 +354,22 @@ header .the-form form button {
   font-weight: 700;
   padding: 0.9vw;
   border-radius: 1.2vw;
-  background-color: black;
-  color: orange;
+  background-color: whitesmoke;
+  color: black;
   cursor: pointer;
   transition: all ease-in-out 0.45s;
 }
 .contact form button:hover,
 header .the-form form button:hover {
-  background-color: orange;
-  color: black;
+  background-color: black;
+  color: whitesmoke;
   padding: 1.3;
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 10px 20px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 10px 20px,
+    rgba(255, 255, 255, 0.3) 0px 6px 6px;
 }
 
 .about {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.3),
-    rgba(255, 166, 0, 0.3),
-    rgba(128, 0, 128, 0.55),
-    rgba(255, 166, 0, 0.55)
-  );
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,18 +379,17 @@ header .the-form form button:hover {
   height: 48vw;
 }
 .albums {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.5),
-    rgba(255, 166, 0, 0.5),
-    rgba(128, 0, 128, 0.75),
-    rgba(255, 166, 0, 0.75)
-  );
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(3.5px);
+}
+.albums .main {
+  padding-top: 3vw;
+}
+.albums .main #logo {
+  padding-top: 3vw;
 }
 
 .albums .the-content {
@@ -324,7 +404,7 @@ header .the-form form button:hover {
 .albums .the-content .info {
   width: 45%;
   height: 35vw;
-  background: rgba(0, 0, 0, 0.64);
+  background: rgba(245, 245, 245, 0.048);
   color: whitesmoke;
 }
 .albums .the-content .info p {
