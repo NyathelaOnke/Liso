@@ -6,11 +6,11 @@
 
 html {
   scroll-behavior: smooth;
-} 
+} /*
 img {
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
-}
+}*/
 nav {
   padding-top: 3vw;
   padding-left: 1.3vw;
@@ -43,8 +43,8 @@ nav {
 }
 .the-text:focus {
   background: black;
-  color: red;
-  box-shadow: 0.35vw 0.35vw 0.35vw -0.35vw red;
+  color: whitesmoke;
+  box-shadow: 0.35vw 0.35vw 0.35vw -0.35vw whitesmoke;
 }
 .homepage {
   display: inline-flex;
@@ -127,13 +127,7 @@ nav {
 }
 
 .home {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.5),
-    rgba(255, 166, 0, 0.5),
-    rgba(128, 0, 128, 0.75),
-    rgba(255, 166, 0, 0.75)
-  );
+  background: black;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -149,7 +143,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   color: whitesmoke;
   width: 100%;
   transition: 0.5s ease-in-out;
@@ -359,8 +353,7 @@ nav {
   cursor: pointer;
   transition: all ease-in-out 0.45s;
 }
-.contact form button:hover,
-header .the-form form button:hover {
+.contact form button:hover {
   background-color: black;
   color: whitesmoke;
   padding: 1.3;
@@ -413,14 +406,7 @@ header .the-form form button:hover {
   letter-spacing: 0.2vw;
 }
 .music {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.5),
-    rgba(255, 166, 0, 0.5),
-    rgba(128, 0, 128, 0.75),
-    rgba(255, 166, 0, 0.75)
-  );
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -631,14 +617,7 @@ input[type="range"]::-webkit-slider-thumb {
 }*/
 
 .performance {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.5),
-    rgba(255, 166, 0, 0.5),
-    rgba(128, 0, 128, 0.75),
-    rgba(255, 166, 0, 0.75)
-  );
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -669,8 +648,8 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: 700;
   text-decoration: none;
   padding: 0.95vw;
-  background: black;
-  color: orange;
+  background: whitesmoke;
+  color: black;
   align-items: center;
   border: none;
   border-radius: 0.5vw;
@@ -700,7 +679,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 27vw;
   margin: 2vw auto;
   border-radius: 0.5vw;
-  background: rgba(0, 0, 0, 0.459);
+  background: rgba(245, 245, 245, 0.507);
 }
 .content .main-content .post img {
   width: 50%;
@@ -714,28 +693,22 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .content .main-content .post .preview a {
   background: blanchedalmond;
-  color: orange;
+  color: black;
 }
 .content .main-content .post .preview a:hover {
-  color: orange;
+  color: black;
   background: rgba(255, 235, 205, 0.356);
-  box-shadow: -1vw 1.5vw 1.5vw -1vw orange;
+  box-shadow: -1vw 1.5vw 1.5vw -1vw black;
 }
 .content .main-content .post .preview p a {
   font-size: 2.2vw;
   text-decoration: none;
-  color: orange;
+  color: whitesmoke;
   font-weight: 750;
   background: none;
 }
 .latest {
-  background-image: radial-gradient(
-    circle,
-    rgba(128, 0, 128, 0.5),
-    rgba(255, 166, 0, 0.5),
-    rgba(128, 0, 128, 0.75),
-    rgba(255, 166, 0, 0.75)
-  );
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -749,10 +722,106 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 1.8vw;
 }
 
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: blanchedalmond;
+  width: 100%;
+}
+footer .footer-content {
+  height: 52.5vh;
+  display: flex;
+  width: 100%;
+}
+
+footer .footer-content .about {
+  padding-left: 8vw;
+}
+footer .footer-content .about h1 {
+  font-size: 2.3vw;
+  font-weight: 600;
+}
+footer .footer-content .about p {
+  padding-top: 1vw;
+}
+footer .footer-content .about .the-form h2 {
+  padding-top: 1vw;
+  text-align: center;
+  font-size: 1.8vw;
+}
+footer .footer-content .about .the-form {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1.5vw;
+}
+footer .footer-content .about form {
+  display: inline-flex;
+  padding-top: 1vw;
+}
+footer .footer-content .about .the-form form input[type="email"] {
+  font-size: 1.1vw;
+  padding: 0.7vw 0.9vw;
+  border-top-left-radius: 1.8vw;
+  border-bottom-left-radius: 1.8vw;
+  background-color: white;
+  color: black;
+  width: 25vw;
+}
+
+footer .footer-content .about .the-form form button {
+  border-radius: 0.1vw;
+  border-top-right-radius: 1.2vw;
+  border-bottom-right-radius: 1.2vw;
+  background-color: black;
+  color: whitesmoke;
+  width: 35%;
+  font-size: 1.3vw;
+  font-weight: 700;
+  padding: 0.9vw;
+  cursor: pointer;
+  transition: all ease-in-out 0.45s;
+}
+
+footer .footer-content .footer-section {
+  background: rgba(0, 0, 0, 0.6);
+  flex: 1;
+  padding: 1.5vw;
+}
+footer .about .social {
+  padding-left: 18vw;
+}
+footer .about .social a {
+  color: whitesmoke;
+  margin-right: 1vw;
+  font-size: 2vw;
+  font-weight: 500;
+  margin-top: 0.5vw;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+footer .footer-content .about .social a:hover {
+  color: blanchedalmond;
+  transition: all 0.3s;
+}
+
+footer .footer-content .contact-form form .contactBtn {
+  color: blanchedalmond;
+  background: black;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-content .contact-form form .contactBtn:hover {
+  color: black;
+  background: whitesmoke;
+}
+footer .footer-content .contact-form form .the-text.contactMsg {
+  margin-top: 0.5vw;
+  margin-bottom: 0.3vw;
+}
+
 footer .bottom-footer {
+  font-size: 1.2vw;
+  letter-spacing: 0.18;
   background: rgba(245, 245, 245, 0.2);
-  font-size: 1.5vw;
-  height: 7vh;
+  height: 6vh;
   width: 100%;
   color: black;
   text-align: center;
@@ -761,9 +830,9 @@ footer .bottom-footer {
   transition: 0.5s ease-in-out;
 }
 footer .bottom-footer a {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   color: black;
-  letter-spacing: 0.16vw;
+  letter-spacing: 0.13vw;
 }
 footer .bottom-footer a:hover {
   color: orange;
