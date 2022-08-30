@@ -156,7 +156,7 @@ nav {
   opacity: 1;
 }
 .home .column .one {
-  background-image: url(images/home/album.png);
+  background-image: url(images/home/albums.jpeg);
   background-color: rgba(0, 0, 0, 0.55);
   background-position: center;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ nav {
   height: 55%;
 }
 .home .column .two {
-  background-image: url(images/home/performance.jpg);
+  background-image: url(images/home/performances.jpeg);
   background-color: rgba(0, 0, 0, 0.55);
   background-position: center;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ nav {
   height: 45%;
 }
 .home .column .three {
-  background-image: url(images/home/about.jpeg);
+  background-image: url(images/home/aboutme.jpeg);
   background-color: rgba(0, 0, 0, 0.55);
   background-position: center;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ nav {
   height: 45%;
 }
 .home .column .four {
-  background-image: url(images/home/contact.JPG);
+  background-image: url(images/home/contactme.jpeg);
   background-color: rgba(0, 0, 0, 0.55);
   background-position: center;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ nav {
   height: 55%;
 }
 .home .column .five {
-  background-image: url(images/home/latest.JPG);
+  background-image: url(images/home/mylatest.jpeg);
   background-color: rgba(0, 0, 0, 0.55);
   background-position: center;
   background-repeat: no-repeat;
@@ -216,7 +216,7 @@ nav {
   height: 50%;
 }
 .home .column .six {
-  background-image: url(images/home/music.png);
+  background-image: url(images/home/mymusic.jpeg);
   background-color: rgba(0, 0, 0, 0.55);
   background-position: center;
   background-repeat: no-repeat;
